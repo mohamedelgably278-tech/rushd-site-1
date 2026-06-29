@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="سكور المطوّر على رُشد — تقييم محايد مبني على بيانات منشورة قبل ما تشتري.">
+<title>رُشد · سكور المطوّر</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2026%27%3E%3Cpath%20d%3D%27M12%201l10%204v8c0%206.5-4.3%2010.5-10%2012C6.3%2023.5%202%2019.5%202%2013V5z%27%20fill%3D%27%2523241241%27/%3E%3Cpath%20d%3D%27M8%2013l3%203%205-6%27%20stroke%3D%27%2523AEDD1C%27%20stroke-width%3D%272.4%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="رُشد">
+<meta property="og:title" content="رُشد · استثمر في العقار بثقة">
+<meta property="og:description" content="قبل ما تحط فلوس عمرك في عقار، اعرف إنك مش بتغلط — فحص محايد لصفقتك وللمطوّر قبل ما توقّع. من غير بيع ومن غير عمولة.">
+<meta property="og:url" content="https://www.rush-d.net/">
+<meta property="og:image" content="https://www.rush-d.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رُشد · استثمر في العقار بثقة">
+<meta name="twitter:description" content="قبل ما تحط فلوس عمرك في عقار، اعرف إنك مش بتغلط — فحص محايد لصفقتك وللمطوّر قبل ما توقّع. من غير بيع ومن غير عمولة.">
+<meta name="twitter:image" content="https://www.rush-d.net/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--plum-ink:#241241;--plum:#6A45C9;--plum-2:#553098;--plum-soft:#EFEAFB;--lime:#AEDD1C;--lime-deep:#51730A;--lime-soft:#EEF7D6;--coral:#DD4F36;--coral-soft:#FBE6E0;--amber:#DD8E2A;--amber-soft:#FAEFD8;--paper:#FBF8F3;--card:#FFFFFF;--ink:#2A2236;--ink-soft:#6A6380;--line:#ECE5DB;--shadow:0 1px 2px rgba(36,18,65,.04),0 12px 30px rgba(36,18,65,.07);--shadow-lg:0 2px 8px rgba(36,18,65,.06),0 24px 56px rgba(36,18,65,.13)}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+  body{font-family:'Tajawal',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'El Messiri',serif;color:var(--plum-ink);line-height:1.22}
+  ::selection{background:var(--lime);color:var(--plum-ink)}a{text-decoration:none;color:inherit}
+  :focus-visible{outline:3px solid var(--plum);outline-offset:2px;border-radius:6px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:50;background:rgba(251,248,243,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:12px;height:62px}
+  .logo{display:flex;align-items:center;gap:9px;font-family:'El Messiri';font-weight:700;font-size:22px;color:var(--plum-ink)}
+  .logo .shield{width:21px;height:23px}
+  .nav .back{margin-right:auto;font-weight:700;font-size:14px;color:var(--ink-soft)}
+
+  .hero-dev{padding:30px 0 6px}
+  .dev-card{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-lg);overflow:hidden}
+  .dev-top{padding:28px 26px;display:flex;align-items:center;gap:20px;color:#fff;position:relative;overflow:hidden}
+  .dev-top::after{content:"";position:absolute;top:-70px;left:-50px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.13),transparent 60%)}
+  .dev-badge{width:74px;height:74px;border-radius:18px;background:rgba(255,255,255,.16);display:grid;place-items:center;font-family:'El Messiri';font-weight:700;font-size:26px;flex-shrink:0;position:relative}
+  .dev-info{position:relative;flex:1;min-width:0}
+  .dev-info h1{color:#fff;font-size:clamp(22px,4vw,30px)}
+  .dev-info .sub{color:rgba(255,255,255,.82);font-size:13.5px;font-weight:600;margin-top:3px}
+  .dev-bigscore{text-align:center;flex-shrink:0;position:relative}
+  .dev-bigscore .n{font-family:'El Messiri';font-weight:700;font-size:50px;line-height:1;color:#fff}
+  .dev-bigscore .of{font-size:14px;color:rgba(255,255,255,.6)}
+  .dev-bigscore .tier{display:inline-block;margin-top:4px;font-weight:800;font-size:12px;padding:3px 12px;border-radius:100px;background:rgba(255,255,255,.95)}
+
+  .verdict-strip{padding:14px 26px;font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:9px}
+  .vs-good{background:var(--lime-soft);color:var(--lime-deep)}.vs-mid{background:var(--amber-soft);color:#7a5310}.vs-bad{background:var(--coral-soft);color:var(--coral)}
+
+  .section{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:24px;margin-top:16px}
+  .section h2{font-size:18px;margin-bottom:4px}
+  .section .ssub{font-size:13px;color:var(--ink-soft);font-weight:500;margin-bottom:16px}
+  .pillars{display:flex;flex-direction:column;gap:14px}
+  .pillar .pt{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-bottom:6px}.pillar .pt .v{color:var(--ink-soft)}
+  .bar{height:9px;border-radius:100px;background:var(--paper);overflow:hidden}.bar i{display:block;height:100%;border-radius:100px;background:var(--plum);width:0;transition:width 1s cubic-bezier(.3,1,.4,1)}
+  .facts{display:flex;gap:10px;flex-wrap:wrap}
+  .fact{flex:1;min-width:120px;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:14px;text-align:center}
+  .fact b{font-family:'El Messiri';font-weight:700;font-size:22px;color:var(--plum-ink);display:block}
+  .fact span{font-size:12px;color:var(--ink-soft);font-weight:600}
+  .timeline{list-style:none;display:flex;flex-direction:column;gap:0}
+  .timeline li{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14px;font-weight:500}
+  .timeline li:last-child{border-bottom:none}
+  .timeline .yr{font-family:'El Messiri';font-weight:700;color:var(--plum);flex-shrink:0;width:54px}
+  .reviews-sum{background:var(--plum-soft);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+  .reviews-sum .rt{font-weight:700;font-size:14px;color:var(--plum-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px}
+  .reviews-sum p{font-size:13.5px;color:var(--ink);font-weight:500;line-height:1.7}
+  .rev{border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin-bottom:9px}
+  .rev .rh{display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;color:var(--ink-soft);margin-bottom:4px}
+  .rev .stars{color:var(--amber)}
+  .rev p{font-size:13.5px;font-weight:500}
+  .addrev-btn{width:100%;font-family:'Tajawal';font-weight:700;font-size:14.5px;background:var(--card);border:1.5px dashed var(--plum);color:var(--plum);padding:13px;border-radius:13px;cursor:pointer;margin-top:6px}
+  .revform{display:none;margin-top:12px;background:var(--paper);border-radius:13px;padding:16px}
+  .revform.open{display:block}
+  .revform textarea,.revform input,.revform select{width:100%;font-family:'Tajawal';font-weight:600;font-size:14px;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:10px;background:#fff}
+  .revform button{font-family:'Tajawal';font-weight:700;background:var(--plum);color:#fff;border:none;padding:11px 18px;border-radius:11px;cursor:pointer}
+
+  .share{background:var(--plum-ink);border-radius:18px;padding:22px 24px;margin-top:16px;color:#fff;text-align:center}
+  .share h3{color:#fff;font-size:18px;margin-bottom:4px}
+  .share p{font-size:13px;color:rgba(255,255,255,.75);font-weight:500;margin-bottom:16px}
+  .share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .share-btns button{font-family:'Tajawal';font-weight:700;font-size:14px;border:none;padding:12px 20px;border-radius:11px;cursor:pointer}
+  .sb-wa{background:#25D366;color:#fff}.sb-copy{background:var(--lime);color:var(--plum-ink)}
+
+  .claim{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:16px;display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+  .claim .ci{font-size:20px}
+  .claim .ct{flex:1;min-width:200px;font-size:13px;color:var(--ink-soft);font-weight:600}
+  .claim button{font-family:'Tajawal';font-weight:700;font-size:13px;background:var(--card);border:1.5px solid var(--line);color:var(--plum-ink);padding:9px 15px;border-radius:10px;cursor:pointer}
+  .disc{font-size:12px;color:var(--ink-soft);line-height:1.7;margin:16px 0 50px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 17px}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--plum-ink);color:#fff;padding:13px 22px;border-radius:12px;font-weight:700;font-size:14px;opacity:0;transition:all .3s;z-index:100;box-shadow:var(--shadow-lg)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media(max-width:560px){.dev-top{flex-wrap:wrap;gap:14px}.dev-bigscore{order:3}}
+
+  /* WhatsApp floating widget */
+  .wa-widget{position:fixed;bottom:22px;left:22px;z-index:200;font-family:'Tajawal',sans-serif}
+  .wa-fab{position:relative;width:60px;height:60px;border-radius:50%;background:#25D366;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.45);transition:transform .2s}
+  .wa-fab:hover{transform:scale(1.07)}
+  .wa-fab svg{width:34px;height:34px}
+  .wa-fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;z-index:-1;animation:waPulse 2.4s infinite}
+  @keyframes waPulse{0%{transform:scale(1);opacity:.55}70%{transform:scale(1.7);opacity:0}100%{opacity:0}}
+  .wa-fab.bounce{animation:waBounce 1s ease}
+  @keyframes waBounce{0%,100%{transform:translateY(0)}30%{transform:translateY(-9px)}60%{transform:translateY(-3px)}}
+  .wa-tip{position:absolute;bottom:8px;left:74px;white-space:nowrap;background:var(--card);color:var(--ink);font-weight:700;font-size:13.5px;padding:11px 36px 11px 15px;border-radius:14px 14px 14px 4px;box-shadow:var(--shadow-lg);opacity:0;transform:translateX(10px);pointer-events:none;transition:all .35s}
+  .wa-tip.show{opacity:1;transform:translateX(0);pointer-events:auto}
+  .wa-tip-x{position:absolute;left:9px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--ink-soft);font-size:16px;cursor:pointer;line-height:1}
+  .wa-panel{position:absolute;bottom:74px;left:0;width:330px;max-width:calc(100vw - 44px);background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-lg);overflow:hidden;transform-origin:bottom left;transform:scale(.5);opacity:0;pointer-events:none;transition:all .25s cubic-bezier(.34,1.4,.4,1)}
+  .wa-panel.open{transform:scale(1);opacity:1;pointer-events:auto}
+  .wa-head{background:#075E54;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:11px}
+  .wa-ava{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center;font-size:20px;flex-shrink:0}
+  .wa-meta{flex:1;min-width:0}
+  .wa-name{font-family:'El Messiri',serif;font-weight:700;font-size:17px}
+  .wa-status{font-size:11.5px;opacity:.85;display:flex;align-items:center;gap:5px}
+  .wa-status .dot{width:7px;height:7px;border-radius:50%;background:#AEDD1C;display:inline-block}
+  .wa-x{background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1;opacity:.8}
+  .wa-body{padding:18px 16px;background:#ECE5DD;max-height:230px;overflow-y:auto}
+  .wa-bubble{background:#fff;border-radius:4px 14px 14px 14px;padding:11px 14px;font-size:13.5px;font-weight:500;color:#2A2236;line-height:1.6;box-shadow:0 1px 2px rgba(0,0,0,.1);max-width:88%}
+  .wa-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+  .wa-chip{background:#fff;border:1px solid #d6e8d0;color:#075E54;font-family:'Tajawal';font-weight:700;font-size:12.5px;padding:8px 12px;border-radius:100px;cursor:pointer;transition:all .15s}
+  .wa-chip:hover{background:#dcf8c6}
+  .wa-input{display:flex;gap:8px;padding:11px;background:var(--card);border-top:1px solid var(--line)}
+  .wa-input input{flex:1;border:1.5px solid var(--line);border-radius:100px;padding:10px 15px;font-family:'Tajawal';font-weight:600;font-size:14px;background:var(--paper);color:var(--ink)}
+  .wa-input input:focus{outline:none;border-color:#25D366}
+  .wa-input button{width:42px;height:42px;border-radius:50%;background:#25D366;color:#fff;border:none;cursor:pointer;font-size:17px;flex-shrink:0;transform:scaleX(-1)}
+  @media(max-width:480px){.wa-tip{display:none}.wa-widget{bottom:18px;left:18px}}
+  @media (prefers-reduced-motion:reduce){.wa-fab::before{animation:none}.wa-fab.bounce{animation:none}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="index.html"><svg class="shield" viewBox="0 0 24 26" fill="none"><path d="M12 1l10 4v8c0 6.5-4.3 10.5-10 12C6.3 23.5 2 19.5 2 13V5l10-4z" fill="#241241"/><path d="M8 13l3 3 5-6" stroke="#AEDD1C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>رُشد</a>
+  <a class="back" href="index.html#developers">كل المطوّرين ←</a>
+</div></header>
+
+<div class="wrap hero-dev">
+  <div class="dev-card">
+    <div class="dev-top" id="devTop">
+      <div class="dev-badge" id="devBadge">—</div>
+      <div class="dev-info"><h1 id="devName">—</h1><div class="sub" id="devSub">—</div></div>
+      <div class="dev-bigscore"><div class="n" id="devScore">—</div><div class="of">من ١٠٠</div><div class="tier" id="devTier">—</div></div>
+    </div>
+    <div class="verdict-strip" id="verdictStrip"></div>
+  </div>
+
+  <div class="section">
+    <h2>أعمدة السكور</h2>
+    <div class="ssub">مبني على بيانات عامة وموثّقة — مش رأي.</div>
+    <div class="pillars" id="pillars"></div>
+  </div>
+
+  <div class="section">
+    <h2>الأرقام</h2>
+    <div class="ssub">من تقارير السوق المنشورة لسنة ٢٠٢٥.</div>
+    <div class="facts" id="facts"></div>
+  </div>
+
+  <div class="section" id="timelineSec">
+    <h2>سجل التسليم</h2>
+    <div class="ssub">أهم المحطات الموثّقة.</div>
+    <ul class="timeline" id="timeline"></ul>
+  </div>
+
+  <div class="section">
+    <h2>تجارب الناس اللي اشترت منه</h2>
+    <div class="ssub">خلاصة محايدة + تجارب موثّقة. (التجارب بتتراجع قبل النشر).</div>
+    <div class="reviews-sum" id="revSum"></div>
+    <div id="revList"></div>
+    <button class="addrev-btn" id="addRevBtn">＋ أضف تجربتك مع المطوّر ده</button>
+    <div class="revform" id="revForm">
+      <select id="rRating"><option value="5">⭐⭐⭐⭐⭐ راضي جداً</option><option value="4">⭐⭐⭐⭐ كويس</option><option value="3">⭐⭐⭐ مقبول</option><option value="2">⭐⭐ فيه مشاكل</option><option value="1">⭐ تجربة سيئة</option></select>
+      <input id="rWhere" placeholder="المشروع/المنطقة (اختياري)">
+      <textarea id="rText" rows="3" placeholder="احكي تجربتك بصراحة: استلمت في معادك؟ راضي عن الجودة؟"></textarea>
+      <button id="rSubmit">ابعت تجربتي للمراجعة</button>
+    </div>
+  </div>
+
+  <div class="share">
+    <h3>تعرف حد بيفكّر يشتري من المطوّر ده؟</h3>
+    <p>ابعتله الصفحة دي قبل ما يدفع. ممكن توفّرله فلوس عمره.</p>
+    <div class="share-btns">
+      <button class="sb-wa" id="shareWa">شارك على واتساب</button>
+      <button class="sb-copy" id="shareCopy">انسخ اللينك</button>
+    </div>
+  </div>
+
+  <div class="claim">
+    <span class="ci">🏢</span>
+    <div class="ct">إنت المطوّر ده وعندك بيانات تصحّح بها معلومة؟ نراجع طلبك بمصادره.</div>
+    <button id="claimBtn">اطلب مراجعة بياناتك</button>
+  </div>
+
+  <p class="disc">⚠️ السكور أداة استرشادية مبنية على بيانات منشورة وقت إعدادها، وممكن تتغيّر. مش حكم نهائي ولا نصيحة استثمارية أو قانونية، ومش بديل عن مراجعة الأوراق والعقد مع مختص قبل أي دفع. الأرقام المالية تقريبية من تقارير السوق، وتجارب المستخدمين تعبّر عن أصحابها.</p>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+  var arD=['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+  function toAr(s){return String(s).replace(/[0-9]/g,function(d){return arD[+d];});}
+  function $(id){return document.getElementById(id);}
+
+  var DEVS={
+    tmg:{n:"طلعت مصطفى (TMG)",ab:"TM",c:"#6A45C9",y:"+٤٠ سنة في السوق",reg:25,del:34,exp:25,stab:14,deliver:3196,sales:"٢١١ مليار",
+      tl:[["٢٠٢٥","الأعلى تسليماً في السوق بـ٣٬١٩٦ وحدة"],["—","سمعة قوية في الالتزام بمواعيد التسليم وخدمة ما بعد البيع"]],
+      revSum:"معظم المشترين أشادوا بالالتزام بالمواعيد وجودة التشطيب. شكاوى قليلة ومتفرّقة عن بطء خدمة العملاء وقت الذروة.",
+      revs:[[5,"التجمع","استلمت شقتي قبل المعاد بشهر، والتشطيب زي الكتالوج بالظبط."],[4,"مدينتي","الجودة ممتازة، بس خدمة العملاء بتاخد وقت في الرد."]]},
+    lavista:{n:"لافيستا (La Vista)",ab:"LV",c:"#51730A",y:"+٢٠ سنة في السوق",reg:25,del:32,exp:22,stab:14,deliver:2179,sales:"٣٢ مليار",
+      tl:[["٢٠٢٥","سلّمت ٢٬١٧٩ وحدة"],["—","معروفة تحديداً بتسليم مشروعاتها في مواعيدها"]],
+      revSum:"المشترون راضون عموماً عن الالتزام بالمواعيد، خصوصاً في مشاريع الساحل.",
+      revs:[[5,"الساحل","سلّموا الشاليه في معاده بالظبط، تجربة مريحة."]]},
+    palmhills:{n:"بالم هيلز (Palm Hills)",ab:"PH",c:"#DD8E2A",y:"منذ ١٩٩٧",reg:25,del:31,exp:23,stab:13,deliver:2600,sales:"١٤٣ مليار",
+      tl:[["٢٠٢٥","سلّمت ٢٬٦٠٠ وحدة"],["١٩٩٧","بدأت نشاطها في السوق المصري"]],
+      revSum:"سجل تسليم قوي ومجتمعات مطلوبة. بعض الملاحظات عن أسعار الصيانة.",
+      revs:[[4,"أكتوبر","مجتمع متكامل وخدمات حلوة، الصيانة شوية غالية."]]},
+    emaar:{n:"إعمار مصر (Emaar Misr)",ab:"EM",c:"#553098",y:"منذ ١٩٩٧",reg:25,del:28,exp:24,stab:14,deliver:1112,sales:"٧٨ مليار",
+      tl:[["٢٠٢٥","سلّمت ١٬١١٢ وحدة بمعايير عالمية"],["—","ذراع إعمار الإماراتية في مصر"]],
+      revSum:"جودة بناء عالية ومعايير عالمية. الأسعار من الأعلى في السوق.",
+      revs:[[5,"ميفيدا","الجودة عالمية فعلاً، بس السعر مرتفع."]]},
+    sodic:{n:"سوديك (SODIC)",ab:"SD",c:"#2A8C7A",y:"+٢٥ سنة في السوق",reg:25,del:30,exp:23,stab:13,deliver:2083,sales:"٤٨ مليار",
+      tl:[["٢٠٢٥","سلّمت ٢٬٠٨٣ وحدة"]],revSum:"سمعة قوية في الجودة والالتزام.",revs:[[4,"الشيخ زايد","تشطيب راقي وتسليم في المعاد."]]},
+    mountainview:{n:"ماونتن فيو (Mountain View)",ab:"MV",c:"#C0492E",y:"منذ ٢٠٠٥",reg:25,del:30,exp:22,stab:13,deliver:2208,sales:"٦٥٫٧ مليار",
+      tl:[["٢٠٢٥","سلّمت ٢٬٢٠٨ وحدة"]],revSum:"مجتمعات مميزة بفكرة 'iCity'، رضا عام جيد.",revs:[[4,"iCity","الفكرة حلوة والتنفيذ كويس."]]},
+    madinetmasr:{n:"مدينة مصر (Madinet Masr)",ab:"MM",c:"#9A5BC4",y:"+٤٠ سنة في السوق",reg:25,del:27,exp:22,stab:12,deliver:1300,sales:"٥٢ مليار",
+      tl:[["٢٠٢٥","سلّمت ١٬٣٠٠ وحدة"],["٢٠٢٥","تقارير أشارت لارتفاع في إلغاء التعاقدات — تستحق متابعة"]],
+      revSum:"خبرة طويلة، بس تقارير ٢٠٢٥ لفتت لارتفاع إلغاء التعاقدات — راجع كويس.",revs:[[3,"تاج سيتي","المكان حلو بس فيه تأخير بسيط في مرحلة."]]}
+  };
+
+  function tier(s){return s>=90?["ممتاز","#51730A"]:s>=82?["قوي","#6A45C9"]:s>=70?["جيد","#DD8E2A"]:["خد بالك","#DD4F36"];}
+  function getParam(k){return new URLSearchParams(location.search).get(k);}
+
+  var key=(getParam('dev')||'tmg').toLowerCase();
+  var d=DEVS[key]||DEVS.tmg;
+  d.score=d.reg+d.del+d.exp+d.stab;
+  var t=tier(d.score);
+
+  document.title='رُشد · سكور '+d.n;
+  $('devTop').style.background=d.c;
+  $('devBadge').textContent=d.ab;
+  $('devName').textContent=d.n;
+  $('devSub').textContent=d.y+' · مسجّل رسمياً ✓';
+  $('devScore').textContent=toAr(d.score);
+  $('devTier').textContent=t[0];$('devTier').style.color=t[1];
+
+  var vs=$('verdictStrip');
+  if(d.score>=90){vs.className='verdict-strip vs-good';vs.innerHTML='✓ سجل تسليم قوي — من أكثر المطوّرين أماناً في السوق.';}
+  else if(d.score>=82){vs.className='verdict-strip vs-good';vs.innerHTML='✓ مطوّر موثوق بسجل جيد — راجع تفاصيل مشروعك تحديداً.';}
+  else if(d.score>=70){vs.className='verdict-strip vs-mid';vs.innerHTML='⚑ مطوّر مقبول — فيه نقاط تستحق المتابعة قبل ما تدفع.';}
+  else{vs.className='verdict-strip vs-bad';vs.innerHTML='⚠️ خد بالك — راجع سجل التسليم كويس قبل أي التزام.';}
+
+  function P(lbl,val,max){return '<div class="pillar"><div class="pt"><span>'+lbl+'</span><span class="v">'+toAr(val)+'/'+toAr(max)+'</span></div><div class="bar"><i data-w="'+(val/max*100)+'"></i></div></div>';}
+  $('pillars').innerHTML=P('التسجيل الرسمي',d.reg,25)+P('سجل التسليم الفعلي',d.del,35)+P('الخبرة وحجم السوق',d.exp,25)+P('الاستقرار والسمعة',d.stab,15);
+  setTimeout(function(){document.querySelectorAll('.bar i').forEach(function(b){b.style.width=b.dataset.w+'%';});},200);
+
+  $('facts').innerHTML='<div class="fact"><b>'+(d.deliver?toAr(d.deliver.toLocaleString('en-US')):'—')+'</b><span>وحدة سُلّمت ٢٠٢٥</span></div><div class="fact"><b>'+d.sales+'</b><span>مبيعات (جنيه)</span></div><div class="fact"><b>'+d.y.replace('في السوق','').trim()+'</b><span>الخبرة</span></div>';
+
+  $('timeline').innerHTML=d.tl.map(function(x){return '<li><span class="yr">'+x[0]+'</span><span>'+x[1]+'</span></li>';}).join('');
+
+  $('revSum').innerHTML='<div class="rt">🧭 خلاصة رُشد لتجارب المشترين</div><p>'+d.revSum+'</p>';
+  function stars(n){var s='';for(var i=0;i<5;i++)s+=i<n?'★':'☆';return s;}
+  function renderRevs(){
+    $('revList').innerHTML=d.revs.map(function(r){return '<div class="rev"><div class="rh"><span class="stars">'+stars(r[0])+'</span><span>'+r[1]+'</span></div><p>'+r[2]+'</p></div>';}).join('');
+  }
+  renderRevs();
+
+  // toast
+  var toast=$('toast');
+  function showToast(m){toast.textContent=m;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show');},2200);}
+
+  // add review (front-end; goes to "review" — in real version saved & moderated)
+  $('addRevBtn').addEventListener('click',function(){$('revForm').classList.toggle('open');});
+  $('rSubmit').addEventListener('click',function(){
+    var txt=$('rText').value.trim();if(!txt){showToast('اكتب تجربتك الأول');return;}
+    $('revForm').classList.remove('open');$('rText').value='';
+    showToast('تمام! تجربتك اتبعتت للمراجعة 🌿');
+  });
+
+  // share
+  var url=location.href;
+  $('shareWa').addEventListener('click',function(){
+    var msg='شوف سكور '+d.n+' على رُشد قبل ما تشتري: '+url;
+    window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank');
+  });
+  $('shareCopy').addEventListener('click',function(){
+    if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){showToast('اتنسخ اللينك ✓');});}
+    else{showToast(url);}
+  });
+  $('claimBtn').addEventListener('click',function(){showToast('هيتفتح نموذج طلب المراجعة قريباً');});
+})();
+</script>
+
+<!-- WhatsApp floating widget -->
+<div class="wa-widget" id="waWidget">
+  <div class="wa-panel" id="waPanel" role="dialog" aria-label="محادثة واتساب">
+    <div class="wa-head">
+      <div class="wa-ava">🛡️</div>
+      <div class="wa-meta"><div class="wa-name">رُشد</div><div class="wa-status"><span class="dot"></span> بنرد عادةً خلال دقايق</div></div>
+      <button class="wa-x" id="waClose" aria-label="إغلاق">&times;</button>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble">أهلاً 👋 اسأل عن أي فرصة أو مطوّر، وهنطمّنك قبل ما تاخد أي قرار. اكتب استفسارك وهنرد عليك على واتساب.</div>
+      <div class="wa-chips">
+        <button class="wa-chip">عايز أطمن على صفقة</button>
+        <button class="wa-chip">استفسار عن مطوّر</button>
+        <button class="wa-chip">إزاي رُشد بيشتغل؟</button>
+      </div>
+    </div>
+    <div class="wa-input">
+      <input id="waText" type="text" placeholder="اكتب رسالتك..." aria-label="رسالتك">
+      <button id="waSend" aria-label="إرسال">&#10148;</button>
+    </div>
+  </div>
+  <div class="wa-tip" id="waTip">محتاج مساعدة؟ كلّمنا 👋<button class="wa-tip-x" id="waTipX" aria-label="إغلاق">&times;</button></div>
+  <button class="wa-fab" id="waFab" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.25-.1-.45-.15-.65.15-.2.3-.75.95-.9 1.1-.15.2-.35.2-.65.05-.3-.15-1.25-.45-2.4-1.45-.9-.8-1.5-1.75-1.65-2.05-.15-.3 0-.45.15-.6.15-.15.3-.35.45-.55.15-.2.2-.3.3-.5.1-.2.05-.4 0-.55-.05-.15-.65-1.6-.9-2.15-.25-.55-.5-.5-.65-.5h-.55c-.2 0-.5.05-.75.35-.25.3-1 .95-1 2.35s1.05 2.7 1.2 2.9c.15.2 2.05 3.15 5 4.4.7.3 1.25.5 1.65.65.7.2 1.35.2 1.85.1.55-.1 1.7-.7 1.95-1.35.25-.65.25-1.2.15-1.35-.05-.1-.25-.15-.55-.3z"/><path d="M12 2A10 10 0 0 0 3.5 17.3L2 22l4.8-1.45A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.85.85.85-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  /* ====== غيّر الرقم ده لرقم واتسابك (بصيغة دولية بدون + أو أصفار) مثال مصر: 2010xxxxxxxx ====== */
+  var WA_NUMBER="201111066828";
+  function $(id){return document.getElementById(id);}
+  var panel=$('waPanel'),fab=$('waFab'),tip=$('waTip');
+  function openPanel(){panel.classList.add('open');if(tip)tip.classList.remove('show');setTimeout(function(){var t=$('waText');if(t)t.focus();},250);}
+  function closePanel(){panel.classList.remove('open');}
+  fab.addEventListener('click',function(){panel.classList.contains('open')?closePanel():openPanel();});
+  $('waClose').addEventListener('click',closePanel);
+  function send(txt){
+    var msg=(txt||$('waText').value||'').trim();
+    if(!msg)msg='أهلاً، عايز أستفسر عن الاستثمار العقاري على رُشد.';
+    window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg),'_blank');
+  }
+  $('waSend').addEventListener('click',function(){send();});
+  $('waText').addEventListener('keydown',function(e){if(e.key==='Enter')send();});
+  Array.prototype.forEach.call(document.querySelectorAll('.wa-chip'),function(c){c.addEventListener('click',function(){send(c.textContent);});});
+  if(tip){
+    var tx=$('waTipX'); if(tx)tx.addEventListener('click',function(e){e.stopPropagation();tip.classList.remove('show');tip.dataset.dismiss='1';});
+    setTimeout(function(){if(!tip.dataset.dismiss&&!panel.classList.contains('open')){tip.classList.add('show');fab.classList.add('bounce');setTimeout(function(){fab.classList.remove('bounce');},1000);}},3500);
+  }
+})();
+</script>
+
+</body>
+</html>

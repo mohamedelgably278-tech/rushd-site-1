@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>رُشد · لوحة إدارة الفرص</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2026%27%3E%3Cpath%20d%3D%27M12%201l10%204v8c0%206.5-4.3%2010.5-10%2012C6.3%2023.5%202%2019.5%202%2013V5z%27%20fill%3D%27%2523241241%27/%3E%3Cpath%20d%3D%27M8%2013l3%203%205-6%27%20stroke%3D%27%2523AEDD1C%27%20stroke-width%3D%272.4%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="رُشد">
+<meta property="og:title" content="رُشد · استثمر في العقار بثقة">
+<meta property="og:description" content="قبل ما تحط فلوس عمرك في عقار، اعرف إنك مش بتغلط — فحص محايد لصفقتك وللمطوّر قبل ما توقّع. من غير بيع ومن غير عمولة.">
+<meta property="og:url" content="https://www.rush-d.net/">
+<meta property="og:image" content="https://www.rush-d.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رُشد · استثمر في العقار بثقة">
+<meta name="twitter:description" content="قبل ما تحط فلوس عمرك في عقار، اعرف إنك مش بتغلط — فحص محايد لصفقتك وللمطوّر قبل ما توقّع. من غير بيع ومن غير عمولة.">
+<meta name="twitter:image" content="https://www.rush-d.net/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--plum-ink:#241241;--plum:#6A45C9;--plum-2:#553098;--plum-soft:#EFEAFB;--lime:#AEDD1C;--lime-deep:#51730A;--lime-soft:#EEF7D6;--coral:#DD4F36;--coral-soft:#FBE6E0;--amber:#DD8E2A;--amber-soft:#FAEFD8;--paper:#FBF8F3;--card:#FFFFFF;--ink:#2A2236;--ink-soft:#6A6380;--line:#ECE5DB;--shadow:0 1px 2px rgba(36,18,65,.04),0 12px 30px rgba(36,18,65,.07);--shadow-lg:0 2px 8px rgba(36,18,65,.06),0 24px 56px rgba(36,18,65,.13)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Tajawal',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'El Messiri',serif;color:var(--plum-ink);line-height:1.22}
+  ::selection{background:var(--lime);color:var(--plum-ink)}
+  :focus-visible{outline:3px solid var(--plum);outline-offset:2px;border-radius:6px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:50;background:rgba(251,248,243,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:12px;height:64px}
+  .logo{display:flex;align-items:center;gap:9px;font-family:'El Messiri';font-weight:700;font-size:22px;color:var(--plum-ink)}
+  .logo .shield{width:21px;height:23px}
+  .badge{font-weight:700;font-size:12px;background:var(--plum-ink);color:#fff;padding:5px 12px;border-radius:8px}
+  .nav .right{margin-right:auto;display:flex;gap:8px}
+  .nav button{font-family:'Tajawal';font-weight:700;font-size:13.5px;border:1.5px solid var(--line);background:var(--card);color:var(--plum-ink);padding:9px 15px;border-radius:10px;cursor:pointer}
+  .nav button.solid{background:var(--plum);color:#fff;border-color:var(--plum)}
+
+  .intro{padding:30px 0 6px}
+  .intro h1{font-size:clamp(24px,4vw,32px)}
+  .intro p{color:var(--ink-soft);font-weight:500;margin-top:6px;font-size:15px}
+  .howto{margin-top:14px;background:var(--lime-soft);border:1px solid var(--lime);border-radius:13px;padding:13px 16px;font-size:13.5px;color:#3f560a;font-weight:600;line-height:1.7}
+  .howto b{color:var(--plum-ink)}
+
+  .layout{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:24px 0 50px;align-items:start}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:24px}
+  .panel h2{font-size:19px;margin-bottom:4px}
+  .panel .psub{font-size:13px;color:var(--ink-soft);font-weight:500;margin-bottom:18px}
+  .field{margin-bottom:15px}
+  .field label{display:block;font-weight:700;font-size:13px;margin-bottom:6px}
+  .field .hint{font-weight:500;color:var(--ink-soft);font-size:11.5px}
+  input,select,textarea{width:100%;font-family:'Tajawal';font-weight:600;font-size:14.5px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:11px;padding:11px 13px;transition:border .15s}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--plum);background:#fff}
+  textarea{resize:vertical;min-height:64px;line-height:1.6}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .seg{display:flex;gap:6px;background:var(--paper);padding:4px;border-radius:11px;border:1.5px solid var(--line);flex-wrap:wrap}
+  .seg button{flex:1;min-width:70px;font-family:'Tajawal';font-weight:700;font-size:13px;border:none;background:transparent;color:var(--ink-soft);padding:9px 6px;border-radius:8px;cursor:pointer}
+  .seg button.on{background:var(--plum);color:#fff}
+  .img-drop{border:2px dashed var(--line);border-radius:14px;padding:18px;text-align:center;cursor:pointer;transition:all .15s;background:var(--paper)}
+  .img-drop:hover{border-color:var(--plum);background:#fff}
+  .img-drop.has{padding:0;border-style:solid;overflow:hidden}
+  .img-drop img{width:100%;height:150px;object-fit:cover;display:block}
+  .img-drop .ph{color:var(--ink-soft);font-size:13px;font-weight:600}
+  .img-drop .ph b{color:var(--plum);display:block;font-size:14px;margin-bottom:3px}
+  .gen-note{background:var(--lime-soft);border-radius:10px;padding:11px 13px;font-size:12.5px;color:var(--lime-deep);font-weight:600;margin:6px 0 14px}
+  .save-btn{width:100%;font-family:'Tajawal';font-weight:800;font-size:16px;color:#fff;background:var(--plum);border:none;border-radius:13px;padding:14px;cursor:pointer;box-shadow:0 8px 22px rgba(106,69,201,.28);margin-top:6px}
+  .save-btn:hover{background:var(--plum-2)}
+
+  .preview-title{font-weight:700;font-size:13px;color:var(--ink-soft);margin-bottom:10px}
+  /* mini opp card preview */
+  .pv{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+  .pv-img{height:160px;background:#e9e3d8 center/cover;position:relative}
+  .pv-img .dev{position:absolute;bottom:0;right:0;left:0;background:linear-gradient(transparent,rgba(36,18,65,.82));color:#fff;padding:22px 16px 12px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+  .pv-img .dev .sc{background:var(--lime);color:var(--plum-ink);font-size:11px;padding:1px 8px;border-radius:6px;font-weight:800}
+  .pv-img .fit{position:absolute;top:12px;left:12px;background:#fff;border-radius:10px;padding:5px 9px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+  .pv-img .fit b{font-family:'El Messiri';font-size:16px;color:var(--lime-deep);display:block;line-height:1}
+  .pv-img .fit span{font-size:8px;font-weight:700;color:var(--ink-soft)}
+  .pv-body{padding:16px}
+  .pv-loc{font-size:12px;color:var(--ink-soft);font-weight:700}
+  .pv-title{font-family:'El Messiri';font-weight:700;font-size:18px;color:var(--plum-ink);margin-top:2px}
+  .pv-kpis{display:flex;gap:8px;margin:12px 0}
+  .pv-kpis .k{flex:1;background:var(--paper);border-radius:10px;padding:9px;text-align:center}
+  .pv-kpis .k b{font-family:'El Messiri';font-size:16px;color:var(--plum-ink);display:block}.pv-kpis .k.lime b{color:var(--lime-deep)}
+  .pv-kpis .k span{font-size:10px;color:var(--ink-soft);font-weight:600}
+  .pv-analysis{background:var(--plum-soft);border-radius:12px;padding:13px 15px;margin-top:6px}
+  .pv-analysis .at{font-weight:700;font-size:13px;color:var(--plum-ink);display:flex;align-items:center;gap:6px;margin-bottom:5px}
+  .pv-analysis p{font-size:12.5px;color:var(--ink);font-weight:500;line-height:1.65}
+
+  .saved{margin-top:18px}
+  .saved h3{font-size:15px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+  .saved h3 .count{font-size:12px;color:var(--ink-soft);font-weight:700}
+  .srow{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:10px 12px;margin-bottom:8px}
+  .srow .th{width:46px;height:46px;border-radius:10px;background:#e9e3d8 center/cover;flex-shrink:0}
+  .srow .info{flex:1;min-width:0}
+  .srow .info .t{font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .srow .info .d{font-size:12px;color:var(--ink-soft);font-weight:600}
+  .srow .del{background:var(--coral-soft);color:var(--coral);border:none;width:32px;height:32px;border-radius:9px;cursor:pointer;font-size:16px;font-weight:800;flex-shrink:0}
+  .empty{text-align:center;color:var(--ink-soft);font-size:13.5px;font-weight:600;padding:24px;background:var(--paper);border-radius:12px}
+
+  .export{background:var(--plum-ink);border-radius:16px;padding:22px;margin-bottom:50px;color:#fff;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .export .ei{font-size:26px}
+  .export .et{flex:1;min-width:220px}
+  .export h3{color:#fff;font-size:17px}
+  .export p{font-size:13px;color:rgba(255,255,255,.78);font-weight:500;margin-top:3px}
+  .export button{font-family:'Tajawal';font-weight:700;font-size:14px;background:var(--lime);color:var(--plum-ink);border:none;padding:12px 20px;border-radius:11px;cursor:pointer;white-space:nowrap}
+
+  @media(max-width:840px){.layout{grid-template-columns:1fr}}
+  @media(max-width:480px){.row,.row3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="logo"><svg class="shield" viewBox="0 0 24 26" fill="none"><path d="M12 1l10 4v8c0 6.5-4.3 10.5-10 12C6.3 23.5 2 19.5 2 13V5l10-4z" fill="#241241"/><path d="M8 13l3 3 5-6" stroke="#AEDD1C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>رُشد</div>
+  <span class="badge">لوحة الإدارة</span>
+</div></header>
+
+<div class="wrap">
+  <div class="intro">
+    <h1>أضف فرصة جديدة</h1>
+    <p>حطّ بيانات الفرصة وصورتها، ورُشد بيكتب التحليل الكامل أوتوماتيك بناءً على المطوّر وسكوره ومخاطر الصفقة. شوف المعاينة وهي بتتبني قدامك.</p>
+    <div class="howto">
+      <b>إزاي بيشتغل؟</b> أي فرصة بتضيفها بتتحفظ في قاعدة البيانات وبتظهر على الموقع <b>لكل الناس أوتوماتيك</b> على طول — من غير رفع ملفات. والحذف بيشيلها من الموقع فوراً.
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- FORM -->
+    <div class="panel">
+      <h2>بيانات الفرصة</h2>
+      <div class="psub">املا الحقول — كل ما تكتب، المعاينة على اليمين بتتحدّث.</div>
+
+      <div class="field">
+        <label>صورة الوحدة <span class="hint">(صورة إنت/المطوّر متفقين عليها)</span></label>
+        <div class="img-drop" id="imgDrop"><div class="ph"><b>📷 اضغط لاختيار صورة</b>أو اسحبها هنا</div></div>
+        <input type="file" id="imgInput" accept="image/*" style="display:none">
+      </div>
+
+      <div class="field"><label>عنوان الفرصة</label><input id="fTitle" placeholder="شقة ١٤٠م · استلام فوري" value=""></div>
+      <div class="row">
+        <div class="field"><label>المطوّر</label><select id="fDev"></select></div>
+        <div class="field"><label>المنطقة / السوق</label><input id="fLoc" placeholder="التجمع الخامس · مصر"></div>
+      </div>
+      <div class="row3">
+        <div class="field"><label>السعر</label><input id="fPrice" placeholder="٦٫٢ مليون ج"></div>
+        <div class="field"><label>عائد إيجاري %</label><input id="fRent" type="number" placeholder="8"></div>
+        <div class="field"><label>ارتفاع قيمة %</label><input id="fApprec" type="number" placeholder="13"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>حالة الوحدة</label>
+          <div class="seg" id="fStatus"><button class="on" data-v="ready">جاهزة</button><button data-v="off">تحت الإنشاء</button></div>
+        </div>
+        <div class="field"><label>السوق (للفلترة)</label>
+          <div class="seg" id="fMarket"><button class="on" data-v="مصر">مصر</button><button data-v="دبي">دبي</button><button data-v="الرياض">الرياض</button></div>
+        </div>
+      </div>
+
+      <div class="field"><label>رقم التواصل لصاحب الفرصة <span class="hint">(هيظهر للعميل لما يضغط "اظهر الرقم" بس)</span></label><input id="fContact" type="text" inputmode="tel" placeholder="01xxxxxxxxx"></div>
+      <div class="gen-note">🧭 رُشد هيحسب درجة المخاطر والعائد المتوقع ويكتب التحليل أوتوماتيك من البيانات دي وسكور المطوّر. تقدر تعدّل التحليل بإيدك بعدين لو حبيت.</div>
+      <div class="field"><label>تحليل رُشد <span class="hint">(بيتكتب أوتوماتيك — عدّله لو عايز)</span></label><textarea id="fAnalysis" rows="3"></textarea></div>
+
+      <button class="save-btn" id="saveBtn">💾 احفظ الفرصة وأضفها للموقع</button>
+    </div>
+
+    <!-- PREVIEW + SAVED -->
+    <div>
+      <div class="panel">
+        <div class="preview-title">👁️ معاينة حية — ده اللي العميل هيشوفه:</div>
+        <div class="pv" id="pv">
+          <div class="pv-img" id="pvImg"><div class="fit"><b id="pvFit">—</b><span>أمان رأس المال</span></div><div class="dev"><span id="pvDev">اختر المطوّر</span> <span class="sc" id="pvSc">—</span></div></div>
+          <div class="pv-body">
+            <div class="pv-loc" id="pvLoc">📍 المنطقة</div>
+            <div class="pv-title" id="pvTitle">عنوان الفرصة</div>
+            <div class="pv-kpis">
+              <div class="k"><b id="pvPrice">—</b><span>السعر</span></div>
+              <div class="k lime"><b id="pvTotal">—</b><span>عائد متوقع</span></div>
+              <div class="k"><b id="pvRent">—</b><span>إيجاري</span></div>
+            </div>
+            <div class="pv-analysis"><div class="at">🧭 تحليل رُشد</div><p id="pvAnalysis">هيظهر التحليل هنا بمجرد ما تملا البيانات...</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel saved">
+        <h3>الفرص المحفوظة <span class="count" id="savedCount">٠ فرصة</span></h3>
+        <div id="savedList"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="export">
+    <span class="ei">📤</span>
+    <div class="et"><h3>نسخة احتياطية (اختياري)</h3><p>فرصك متخزّنة في قاعدة البيانات وبتظهر للكل تلقائياً. لو حابب تحتفظ بنسخة على جهازك للأمان بس، نزّلها من هنا.</p></div>
+    <button id="exportBtn">نزّل نسخة احتياطية</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var arD=['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+  function toAr(s){return String(s).replace(/[0-9]/g,function(d){return arD[+d];});}
+  function $(id){return document.getElementById(id);}
+
+  // developer scores (same source as the public site)
+  var DEVS={
+    "طلعت مصطفى":95,"لافيستا":93,"بالم هيلز":92,"إعمار مصر":91,"سوديك":91,"ماونتن فيو":90,
+    "مدينة مصر":86,"حسن علام":87,"تطوير مصر":85,"مصر إيطاليا":83,"مطوّر آخر / معتمد":75
+  };
+  var devSel=$('fDev');
+  Object.keys(DEVS).forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k+' (سكور '+toAr(DEVS[k])+')';devSel.appendChild(o);});
+
+  var state={img:"",status:"ready",market:"مصر"};
+  var API='/api/opportunities';
+  function apiList(){return fetch(API).then(function(r){return r.ok?r.json():[];}).catch(function(){return [];});}
+  function apiAdd(opp){return fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(opp)}).then(function(r){return r.json();});}
+  function apiDel(id){return fetch(API+'?id='+encodeURIComponent(id),{method:'DELETE'}).then(function(r){return r.json();});}
+
+  // risk + analysis engine (rushd's brain)
+  function compute(){
+    var dev=devSel.value, sc=DEVS[dev]||75;
+    var rent=parseFloat($('fRent').value)||0, apprec=parseFloat($('fApprec').value)||0;
+    var total=rent+apprec; if(total>0)total=Math.max(0,total-1.5);
+    // risk score (0 safe -> 100 risky)
+    var risk=40;
+    risk-=(sc-80)*1.1;            // strong developer lowers risk
+    if(state.status==='off')risk+=16; else risk-=6;
+    risk=Math.max(10,Math.min(92,Math.round(risk)));
+    var fit=Math.max(40,Math.min(96,Math.round(100-risk*0.55+(sc-80)*0.8+total*0.5)));
+    return {dev:dev,sc:sc,rent:rent,apprec:apprec,total:Math.round(total),risk:risk,fit:fit};
+  }
+  function autoAnalysis(c){
+    var safety = c.risk<=28?'منخفضة':c.risk<=45?'متوسطة':'عالية';
+    var devLine = c.sc>=90?('مطوّر سكوره '+toAr(c.sc)+' وسجل تسليمه قوي، فمخاطرة إنك متستلمش منخفضة.'):c.sc>=82?('مطوّر سكوره '+toAr(c.sc)+'، سمعته كويسة بس راجع تسليماته السابقة.'):('المطوّر سكوره '+toAr(c.sc)+' — اتأكد كويس من سجل تسليمه قبل ما تدفع.');
+    var statusLine = state.status==='off'?' الوحدة تحت الإنشاء، فلازم العقد يحميك من تأخير التسليم.':' الوحدة جاهزة، فمفيش خطر تأخير تسليم.';
+    var retLine = c.total>0?(' العائد المتوقع حوالي ~'+toAr(c.total)+'٪ سنوياً (إيجار + ارتفاع قيمة).'):'';
+    return 'درجة المخاطر على فلوسك '+safety+'. '+devLine+statusLine+retLine+' القرار في الآخر قرارك — دي بيانات استرشادية مش توصية.';
+  }
+
+  function refresh(){
+    var c=compute();
+    $('pvFit').textContent=toAr(c.fit)+'٪';
+    $('pvDev').textContent=devSel.value;
+    $('pvSc').textContent='سكور '+toAr(c.sc);
+    $('pvLoc').textContent='📍 '+($('fLoc').value||'المنطقة');
+    $('pvTitle').textContent=$('fTitle').value||'عنوان الفرصة';
+    $('pvPrice').textContent=$('fPrice').value||'—';
+    $('pvTotal').textContent=c.total>0?('~'+toAr(c.total)+'٪'):'—';
+    $('pvRent').textContent=c.rent>0?('~'+toAr(c.rent)+'٪'):'—';
+    if(!$('fAnalysis').dataset.touched) $('fAnalysis').value=autoAnalysis(c);
+    $('pvAnalysis').textContent=$('fAnalysis').value||autoAnalysis(c);
+    $('pvImg').style.backgroundImage=state.img?('url('+state.img+')'):'';
+  }
+
+  // image upload -> base64
+  $('imgDrop').addEventListener('click',function(){$('imgInput').click();});
+  $('imgInput').addEventListener('change',function(e){
+    var f=e.target.files[0];if(!f)return;
+    var r=new FileReader();
+    r.onload=function(){
+      state.img=r.result;
+      var d=$('imgDrop');d.classList.add('has');d.innerHTML='<img src="'+r.result+'" alt="">';
+      refresh();
+    };
+    r.readAsDataURL(f);
+  });
+
+  // segmented
+  document.querySelectorAll('.seg').forEach(function(s){
+    s.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click',function(){
+        s.querySelectorAll('button').forEach(function(x){x.classList.remove('on');});b.classList.add('on');
+        if(s.id==='fStatus')state.status=b.dataset.v;
+        if(s.id==='fMarket')state.market=b.dataset.v;
+        refresh();
+      });
+    });
+  });
+  ['fTitle','fLoc','fPrice','fRent','fApprec'].forEach(function(id){$(id).addEventListener('input',refresh);});
+  devSel.addEventListener('change',refresh);
+  $('fAnalysis').addEventListener('input',function(){this.dataset.touched='1';$('pvAnalysis').textContent=this.value;});
+
+  // saved list (from database)
+  function renderSaved(){
+    var L=$('savedList');L.innerHTML='<div class="empty">بنحمّل الفرص...</div>';
+    apiList().then(function(arr){
+      L.innerHTML='';
+      $('savedCount').textContent=toAr(arr.length)+' فرصة';
+      if(arr.length===0){L.innerHTML='<div class="empty">لسه مفيش فرص. املا البيانات فوق واضغط احفظ.</div>';return;}
+      arr.forEach(function(o){
+        var row=document.createElement('div');row.className='srow';
+        row.innerHTML='<div class="th" style="background-image:url('+(o.img||'')+')"></div><div class="info"><div class="t">'+(o.title||'بدون عنوان')+'</div><div class="d">'+(o.dev||'')+' · '+(o.loc||'')+' · سكور '+toAr(o.sc||0)+'</div></div><button class="del" title="حذف الفرصة">🗑</button>';
+        row.querySelector('.del').addEventListener('click',function(){
+          if(!confirm('متأكد إنك عايز تحذف الفرصة دي؟ هتختفي من الموقع لكل الناس.'))return;
+          row.style.opacity=.5;
+          apiDel(o.id).then(function(){renderSaved();});
+        });
+        L.appendChild(row);
+      });
+    });
+  }
+
+  $('saveBtn').addEventListener('click',function(){
+    var c=compute();
+    if(!$('fTitle').value){alert('اكتب عنوان الفرصة الأول.');return;}
+    var opp={
+      title:$('fTitle').value,dev:devSel.value,sc:c.sc,loc:$('fLoc').value,market:state.market,
+      price:$('fPrice').value,rent:c.rent,apprec:c.apprec,total:c.total,risk:c.risk,fit:c.fit,
+      status:state.status,img:state.img,contact:($('fContact').value||'').trim(),analysis:$('fAnalysis').value||autoAnalysis(c)
+    };
+    var btn=$('saveBtn');var old=btn.textContent;btn.disabled=true;btn.textContent='بنحفظ...';
+    apiAdd(opp).then(function(res){
+      btn.disabled=false;btn.textContent=old;
+      if(!res||!res.ok){alert('حصل خطأ في الحفظ، جرّب تاني.');return;}
+      // reset form
+      ['fTitle','fLoc','fPrice','fRent','fApprec'].forEach(function(id){$(id).value='';});
+      state.img='';$('fContact').value='';$('fAnalysis').value='';$('fAnalysis').dataset.touched='';
+      var d=$('imgDrop');d.classList.remove('has');d.innerHTML='<div class="ph"><b>📷 اضغط لاختيار صورة</b>أو اسحبها هنا</div>';
+      refresh();renderSaved();
+      window.scrollTo({top:0,behavior:'smooth'});
+    }).catch(function(){btn.disabled=false;btn.textContent=old;alert('تعذّر الاتصال بقاعدة البيانات. اتأكد إن الموقع مرفوع على Netlify.');});
+  });
+
+  $('exportBtn').addEventListener('click',function(){
+    apiList().then(function(arr){
+      if(arr.length===0){alert('مفيش فرص تعملها نسخة احتياطية.');return;}
+      var blob=new Blob([JSON.stringify(arr,null,2)],{type:'application/json'});
+      var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='opportunities-backup.json';a.click();
+      alert('تمام! دي نسخة احتياطية من فرصك على جهازك. مش محتاج ترفعها — الفرص متخزّنة في قاعدة البيانات وبتظهر للكل أوتوماتيك.');
+    });
+  });
+
+  refresh();renderSaved();
+})();
+</script>
+</body>
+</html>
